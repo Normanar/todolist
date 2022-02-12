@@ -5,7 +5,7 @@ export const NotFound = () => {
 
     return (
         <div className={style.text}>
-            Ooops! Not found!
+            404 Ooops! Not found!
         </div>
     )
 }
