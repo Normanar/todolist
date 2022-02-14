@@ -59,14 +59,13 @@ function App({demo = false}: PropsType) {
                     {isLoggedIn && <Button color="inherit" onClick={onClickLogout} style={{marginLeft : "20px", backgroundColor: "white", color: "#1976D2", fontWeight:"bold"}}>Logout</Button>}
                 </Toolbar>
                 {status === 'loading' && <LinearProgress/>}
-                {console.log(121212)}
             </AppBar>
             <Container fixed>
                 <Routes>
                     <Route path="/" element={<TodolistsList demo={demo}/>}/>
                     <Route path="login" element={<Login/>}/>
                     <Route path="404" element={<NotFound />} />
-                    <Route path="*" element={<Navigate to={"404"}/>}/>
+                    <Route path="*" element={<Navigate to={"login"}/>}/>
                 </Routes>
             </Container>
         </div>
