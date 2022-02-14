@@ -59,6 +59,7 @@ function App({demo = false}: PropsType) {
                     {isLoggedIn && <Button color="inherit" onClick={onClickLogout} style={{marginLeft : "20px", backgroundColor: "white", color: "#1976D2", fontWeight:"bold"}}>Logout</Button>}
                 </Toolbar>
                 {status === 'loading' && <LinearProgress/>}
+                {console.log(121212)}
             </AppBar>
             <Container fixed>
                 <Routes>
